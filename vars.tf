@@ -15,39 +15,39 @@ variable "AMIS" {
   }
 }
 
-variable PRIV_KEY_PART {
-    default = "vprofilekey"
+variable "PRIV_KEY_PART" {
+  default = "vprofilekey"
 }
 
-variable PUB_KEY_PART {
-    default = "vprofilekey-pub"
+variable "PUB_KEY_PART" {
+  default = "vprofilekey.pub"
 }
 
 variable "USERNAME" {
   default = "ubuntu"
 }
 
-variable MYIP {
-    default = "88.246.222.147/32"
+variable "MYIP" {
+  default = "88.246.222.147/32"
 }
 
-variable rmquser {
-    default = "rabbit"
+variable "rmquser" {
+  default = "rabbit"
 }
 
-variable rmqpass {
-    default = "Blk43@iplku123456"
+variable "rmqpass" {
+  default = "Blk43@iplku123456"
 }
 
-variable dbuser {
-    default = "admin"
+variable "dbuser" {
+  default = "admin"
 }
 
-variable dbpass {
+variable "dbpass" {
   default = "admin123"
 }
 
-variable dbname {
+variable "dbname" {
   default = "accounts"
 }
 
