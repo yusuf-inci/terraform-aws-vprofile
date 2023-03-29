@@ -27,7 +27,7 @@ variable "USERNAME" {
   default = "ubuntu"
 }
 
-variable "MYIP" {
+variable MYIP {
   default = "88.246.222.147/32"
 }
 
