@@ -77,25 +77,25 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
   }
 
   setting {
-    namespace = "elasticbeanstalk:healthreporting:system"
+    namespace = "aws:elasticbeanstalk:healthreporting:system"
     name      = "SystemType"
     value     = "basic"
   }
 
   setting {
-    namespace = "autoscaling:updatepolicy:rollingupdate"
+    namespace = "aws:autoscaling:updatepolicy:rollingupdate"
     name      = "RollingUpdateEnabled"
     value     = "true"
   }
 
   setting {
-    namespace = "autoscaling:updatepolicy:rollingupdate"
+    namespace = "aws:autoscaling:updatepolicy:rollingupdate"
     name      = "RollingUpdateType"
     value     = "Health"
   }
 
   setting {
-    namespace = "autoscaling:updatepolicy:rollingupdate"
+    namespace = "aws:autoscaling:updatepolicy:rollingupdate"
     name      = "MaxBatchSize"
     value     = "1"
   }
